@@ -1,0 +1,55 @@
+.landing-section-bg-container {
+  height: 605px;
+  width: 100%;
+  background-position: absolute;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.poster-details-container {
+  margin-top: 56px;
+  margin-left: 164px;
+  height: 320px;
+}
+.poster-name {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.poster-overview {
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 443px;
+  height: 78px;
+  overflow: hidden;
+}
+.landing-bottom {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(24, 24, 24, 0.546875) 38.26%,
+    #181818 92.82%,
+    #181818 98.68%,
+    #181818 108.61%
+  );
+  height: 162px;
+  width: 100%;
+}
+.play-button {
+  width: 135px;
+  height: 48px;
+  color: #171f46;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+}

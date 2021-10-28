@@ -1,0 +1,101 @@
+.sign-in-app-container {
+  min-height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(
+      116.64deg,
+      rgba(0, 0, 0, 0.8) 0.46%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url('https://res.cloudinary.com/venkateshd/image/upload/v1635149088/movies_app_signin_background_image.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+}
+.sign-in-logo-container {
+  width: 40%;
+  padding-left: 165px;
+  margin-top: 48px;
+  align-self: flex-start;
+}
+.movie-logo {
+  height: 52px;
+  width: 180px;
+}
+.login-container {
+  width: 456px;
+  height: 440px;
+  background: #0c0b10;
+  opacity: 0.8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sign-in-heading {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+}
+.input-container {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.input {
+  background: #333333;
+  border-radius: 2px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding-left: 15px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+.submit-button {
+  background: #e50914;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  height: 40px;
+  width: 94px;
+  align-self: center;
+  margin-top: 25px;
+}
+.error-msg {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fb923c;
+}

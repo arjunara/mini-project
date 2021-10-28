@@ -1,0 +1,47 @@
+.home-app-section {
+  min-height: 100vh;
+  background-color: #131313;
+}
+.home-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 320px;
+}
+.main-home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousal-container {
+  margin-bottom: 20px;
+  width: 85%;
+  max-width: 1125px;
+}
+.main-home-heading {
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.footer-container {
+  align-self: center;
+  margin-top: 52px;
+}
+.social-media-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.social-icon {
+  color: #ffffff;
+  margin-right: 25px;
+}
+.contact-us {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 95px;
+}

@@ -1,0 +1,9 @@
+.slider-container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.movie-image {
+  width: 254px;
+  height: 170px;
+  border-radius: 10px;
+}

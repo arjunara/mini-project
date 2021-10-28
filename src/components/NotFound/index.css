@@ -1,0 +1,55 @@
+.not-found-header-container {
+  height: 103px;
+  background-color: #131313;
+  padding-top: 32px;
+  padding-left: 165px;
+}
+.not-found-bg-container {
+  height: 90vh;
+  background-image: url('https://res.cloudinary.com/venkateshd/image/upload/v1635246593/snow-removal-machine-working-high-ski-slope-snowstorm_454047-2149_1_ikrvtq.png');
+  background-position: absolute;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+.lost-way-heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+.error-description {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 31px;
+  width: 587px;
+  text-align: center;
+  font-weight: 400;
+}
+.netflix-home-button {
+  width: 135px;
+  height: 48px;
+  color: #171f46;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.error-code-text {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+}
+.error-code {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 26px;
+  margin-left: 12px;
+}

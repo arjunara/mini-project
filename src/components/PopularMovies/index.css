@@ -1,0 +1,77 @@
+.popular-bg-container {
+  min-height: 100vh;
+  background-color: #131313;
+}
+.popular-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 320px;
+}
+.popular-movie-container {
+  display: flex;
+  flex-direction: column;
+}
+.popular-movie-list-container {
+  padding-left: 0px;
+  width: 80%;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 45px;
+}
+.popular-movie-list-item {
+  list-style-type: none;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+.popular-movie-image {
+  width: 226px;
+  height: 175px;
+  border-radius: 8px;
+}
+.button-control-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.control-button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  height: 32px;
+  width: 32px;
+  padding-top: 4px;
+  padding-right: 7px;
+  color: #ffffff;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.page-number {
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #cbd5e1;
+  margin-top: 4px;
+}
+.footer-container {
+  align-self: center;
+  margin-top: 52px;
+}
+.social-media-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.social-icon {
+  color: #ffffff;
+  margin-right: 25px;
+}
+.contact-us {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 95px;
+}
