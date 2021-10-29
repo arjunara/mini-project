@@ -1,18 +1,19 @@
-.popular-bg-container {
-  min-height: 100vh;
-  background-color: #131313;
+.home-search-bg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.popular-loader-container {
+.home-loader-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 320px;
 }
-.popular-movie-container {
+.search-movie-container {
   display: flex;
   flex-direction: column;
 }
-.popular-movie-list-container {
+.search-movie-list-container {
   padding-left: 0px;
   width: 80%;
   align-self: center;
@@ -20,36 +21,52 @@
   flex-wrap: wrap;
   margin-top: 45px;
 }
-@media screen and (max-width: 767px) {
-  .popular-movie-list-container {
-    margin-top: 25px;
-    width: 86%;
-  }
-}
-.popular-movie-list-item {
+.search-movie-list-item {
   list-style-type: none;
   margin-bottom: 25px;
   margin-right: 25px;
 }
-.popular-movie-image {
+.search-movie-image {
   width: 226px;
   height: 175px;
   border-radius: 8px;
 }
+.search-failure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 125px;
+  margin-bottom: 125px;
+}
+.search-failure-image {
+  width: 452px;
+  height: 370px;
+}
 @media screen and (max-width: 767px) {
-  .popular-movie-list-item {
-    margin-right: 12px;
-    margin-bottom: 15px;
-  }
-  .popular-movie-image {
-    width: 90px;
-    height: 100px;
+  .search-failure-image {
+    height: 210px;
+    width: 250px;
   }
 }
-.button-control-container {
+.failure-error-msg {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .failure-error-msg {
+    width: 80%;
+    margin-top: 25px;
+  }
+}
+.home-search-button-control-container {
   display: flex;
   justify-content: center;
   margin-top: 15px;
+  margin-bottom: 65px;
 }
 .control-button {
   background-color: transparent;
@@ -69,25 +86,4 @@
   text-align: center;
   color: #cbd5e1;
   margin-top: 4px;
-}
-.footer-container {
-  align-self: center;
-  margin-top: 52px;
-}
-.social-media-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 25px;
-}
-.social-icon {
-  color: #ffffff;
-  margin-right: 25px;
-}
-.contact-us {
-  font-family: 'Roboto';
-  font-size: 20px;
-  font-weight: 500;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 95px;
 }

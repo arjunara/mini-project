@@ -143,7 +143,7 @@ class MoviesDetails extends Component {
     const {similarMovieList} = this.state
     return (
       <ul className="similar-movie-list-container">
-        {similarMovieList.map(eachSimilarMovie => {
+        {similarMovieList.slice(0, 5).map(eachSimilarMovie => {
           const similarMovieImgUrl = `https://image.tmdb.org/t/p/w500${eachSimilarMovie.posterPath}`
           return (
             <li key={eachSimilarMovie.id} className="similar-movie-list-item">

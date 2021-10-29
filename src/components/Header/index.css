@@ -1,7 +1,13 @@
 .nav-bar {
   height: 103px;
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .nav-bar {
+    height: 85px;
+  }
 }
 .nav-container {
   width: 80%;
@@ -9,22 +15,51 @@
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 992px) {
+  .nav-container {
+    width: 90%;
+  }
+}
 .logo-container {
   display: flex;
   justify-content: flex-start;
   padding-left: 10px;
   height: 52px;
-  width: 50%;
   margin-top: 0px;
+}
+.nav-website-logo {
+  height: 52px;
+}
+@media screen and (max-width: 576px) {
+  .logo-container {
+    height: 42px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav-website-logo {
+    width: 152px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav-website-logo {
+    width: 105px;
+    height: 42px;
+  }
 }
 .nav-items-container {
   padding-left: 0px;
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .nav-items-container {
+    display: none;
+  }
+}
 .link-item {
   text-decoration: none;
   list-style-type: none;
+  cursor: pointer;
 }
 .nav-item {
   font-style: normal;
@@ -35,17 +70,48 @@
   opacity: 0.8;
   margin-left: 35px;
 }
+.nav-mobile-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  opacity: 0.8;
+}
 .search-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 320px;
 }
+@media screen and (max-width: 992px) {
+  .search-container {
+    justify-content: space-between;
+    width: 262px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .search-container {
+    width: 60%;
+    justify-content: space-evenly;
+  }
+}
 .custom-btn {
   border: none;
   outline: none;
   cursor: pointer;
   background-color: transparent;
+}
+.custom-sm-btn {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .account-custom-btn {
+    display: none;
+  }
+  .custom-sm-btn {
+    display: flex;
+  }
 }
 .search-icon {
   color: #ffffff;
@@ -62,6 +128,12 @@
   padding-right: 6px;
   justify-content: space-between;
 }
+@media screen and (max-width: 576px) {
+  .search-input-container {
+    width: 120px;
+    height: 36px;
+  }
+}
 .search-input {
   padding-left: 15px;
   font-family: 'Roboto';
@@ -73,9 +145,25 @@
   height: 38px;
   background-color: transparent;
 }
+@media screen and (max-width: 576px) {
+  .search-input {
+    width: 92px;
+    height: 32px;
+  }
+}
 .active {
   font-weight: 600;
   color: #ffffff;
   opacity: 1;
   font-size: 24px;
+}
+.mobile-menu-container {
+  height: 62px;
+  background-color: #131313;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cancel-icon {
+  color: #ffffff;
 }

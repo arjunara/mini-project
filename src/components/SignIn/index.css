@@ -13,15 +13,36 @@
   align-items: center;
   background-size: cover;
 }
+@media screen and (max-width: 767px) {
+  .sign-in-app-container {
+    background: #131313;
+  }
+}
 .sign-in-logo-container {
-  width: 40%;
-  padding-left: 165px;
+  margin-left: 165px;
   margin-top: 48px;
   align-self: flex-start;
 }
 .movie-logo {
   height: 52px;
   width: 180px;
+}
+@media screen and (max-width: 576px) {
+  .movie-logo {
+    height: 27px;
+    width: 110px;
+  }
+  .sign-in-logo-container {
+    margin-top: 32px;
+    margin-left: 25px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sign-in-logo-container {
+    align-self: center;
+    width: 90%;
+  }
 }
 .login-container {
   width: 456px;
@@ -33,27 +54,51 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 292px;
+}
+@media screen and (max-width: 576px) {
+  .login-container {
+    margin-top: 32px;
+    margin-bottom: 200px;
+    width: 90%;
+    background: transparent;
+  }
 }
 .sign-in-heading {
   font-family: 'HK Grotesk';
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 42px;
   line-height: 40px;
   text-align: center;
   color: #ffffff;
   margin-bottom: 15px;
 }
+
 .form-control {
   display: flex;
   flex-direction: column;
   width: 80%;
   justify-content: center;
 }
+@media screen and (max-width: 576px) {
+  .sign-in-heading {
+    font-size: 32px;
+  }
+  .form-control {
+    width: 90%;
+  }
+}
 .input-container {
   margin-top: 35px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 576px) {
+  .input-container {
+    margin-top: 25px;
+  }
 }
 .label {
   font-family: 'Roboto';
@@ -90,6 +135,11 @@
   width: 94px;
   align-self: center;
   margin-top: 25px;
+}
+@media screen and (max-width: 576px) {
+  .submit-button {
+    width: 100%;
+  }
 }
 .error-msg {
   font-family: 'Roboto';

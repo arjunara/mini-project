@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 320px;
+  padding-top: 320px;
 }
 .main-home-container {
   display: flex;
@@ -14,15 +14,22 @@
   align-items: center;
 }
 .carousal-container {
-  margin-bottom: 20px;
   width: 85%;
   max-width: 1125px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .main-home-heading {
   font-family: 'Roboto';
   font-size: 32px;
   font-weight: 600;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .main-home-heading {
+    font-size: 26px;
+    font-weight: 500;
+  }
 }
 .footer-container {
   align-self: center;

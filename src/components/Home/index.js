@@ -9,6 +9,7 @@ import MovieSlick from '../MovieSlick'
 
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import './index.css'
+import HomeSearch from '../HomeSearch'
 
 const apiStatusConstantsList = {
   initial: 'INITIAL',
@@ -23,10 +24,20 @@ class Home extends Component {
     originalsList: [],
     trendingList: [],
     topRatedList: [],
+    apiData: {},
+    searchString: '',
   }
 
   componentDidMount() {
     this.getOriginalMovieList()
+  }
+
+  onChangeSearch = value => {
+    this.setState({searchString: value})
+  }
+
+  assignApiData = data => {
+    this.setState({apiData: data})
   }
 
   getOriginalMovieList = async () => {
@@ -50,7 +61,13 @@ class Home extends Component {
   }
 
   renderHomePageView = () => {
-    const {originalsList, trendingList, topRatedList} = this.state
+    const {
+      originalsList,
+      trendingList,
+      topRatedList,
+      searchString,
+      apiData,
+    } = this.state
     const randomMovieObject = originalsList[Math.ceil(Math.random() * 20) - 1]
     const modifiedMovieObject = {
       name: randomMovieObject.name,
@@ -60,30 +77,40 @@ class Home extends Component {
     }
     return (
       <>
-        <LandingSection movieObject={modifiedMovieObject} />
-        <div className="main-home-container">
-          <div className="carousal-container">
-            <h1 className="main-home-heading">Trending Now</h1>
-            <MovieSlick fetchedList={trendingList} />
-          </div>
-          <div className="carousal-container">
-            <h1 className="main-home-heading">Top Rated</h1>
-            <MovieSlick fetchedList={topRatedList} />
-          </div>
-          <div className="carousal-container">
-            <h1 className="main-home-heading">Originals</h1>
-            <MovieSlick fetchedList={originalsList} />
-          </div>
-          <div className="footer-container">
-            <div className="social-media-container">
-              <BsGoogle size={25} className="social-icon" />
-              <BsTwitter size={25} className="social-icon" />
-              <AiFillInstagram size={25} className="social-icon" />
-              <AiFillYoutube size={25} className="social-icon" />
+        <Header
+          searchValue={this.onChangeSearch}
+          apiDataMethod={this.assignApiData}
+        />
+        {searchString.length > 0 ? (
+          <HomeSearch searchValue={searchString} apiData={apiData} />
+        ) : (
+          <>
+            <LandingSection movieObject={modifiedMovieObject} />
+            <div className="main-home-container">
+              <div className="carousal-container">
+                <h1 className="main-home-heading">Trending Now</h1>
+                <MovieSlick fetchedList={trendingList} />
+              </div>
+              <div className="carousal-container">
+                <h1 className="main-home-heading">Top Rated</h1>
+                <MovieSlick fetchedList={topRatedList} />
+              </div>
+              <div className="carousal-container">
+                <h1 className="main-home-heading">Originals</h1>
+                <MovieSlick fetchedList={originalsList} />
+              </div>
+              <div className="footer-container">
+                <div className="social-media-container">
+                  <BsGoogle size={25} className="social-icon" />
+                  <BsTwitter size={25} className="social-icon" />
+                  <AiFillInstagram size={25} className="social-icon" />
+                  <AiFillYoutube size={25} className="social-icon" />
+                </div>
+                <p className="contact-us">Contact Us</p>
+              </div>
             </div>
-            <p className="contact-us">Contact Us</p>
-          </div>
-        </div>
+          </>
+        )}
       </>
     )
   }

@@ -4,6 +4,12 @@
   padding-top: 32px;
   padding-left: 165px;
 }
+@media screen and (max-width: 767px) {
+  .not-found-header-container {
+    padding-left: 110px;
+    border: 1px solid white;
+  }
+}
 .not-found-bg-container {
   height: 90vh;
   background-image: url('https://res.cloudinary.com/venkateshd/image/upload/v1635246593/snow-removal-machine-working-high-ski-slope-snowstorm_454047-2149_1_ikrvtq.png');
@@ -22,6 +28,11 @@
   color: #ffffff;
   margin-bottom: 12px;
 }
+@media screen and (max-width: 767px) {
+  .lost-way-heading {
+    font-size: 45px;
+  }
+}
 .error-description {
   color: #ffffff;
   font-size: 24px;
@@ -29,6 +40,12 @@
   width: 587px;
   text-align: center;
   font-weight: 400;
+}
+@media screen and (max-width: 767px) {
+  .error-description {
+    width: 80%;
+    font-size: 20px;
+  }
 }
 .netflix-home-button {
   width: 135px;

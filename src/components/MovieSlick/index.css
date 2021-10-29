@@ -7,3 +7,16 @@
   height: 170px;
   border-radius: 10px;
 }
+@media screen and (max-width: 767px) {
+  .movie-image {
+    width: 150px;
+    height: 130px;
+    border-radius: 6px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .movie-image {
+    width: 90px;
+    height: 64px;
+  }
+}

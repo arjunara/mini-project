@@ -1,4 +1,3 @@
-import Header from '../Header'
 import './index.css'
 
 const LandingSection = props => {
@@ -11,7 +10,6 @@ const LandingSection = props => {
       style={{backgroundImage: `url(${baseUrl})`}}
     >
       <div>
-        <Header />
         <div className="poster-details-container">
           <h1 className="poster-name">{name}</h1>
           <p className="poster-overview">{overview}</p>
